@@ -1,0 +1,33 @@
+'use strict';
+
+var lezer$1 = require('@lezer/lezer');
+var language = require('@codemirror/language');
+
+/**
+A language provider based on the [Lezer Lezer
+parser](https://code.haverbeke.berlin/lezer/lezer-grammar), extended
+with highlighting and indentation information.
+*/
+const lezerLanguage = language.LRLanguage.define({
+    name: "lezer",
+    parser: lezer$1.parser.configure({
+        props: [
+            language.foldNodeProp.add({
+                "Body TokensBody SkipBody PrecedenceBody": language.foldInside
+            })
+        ]
+    }),
+    languageData: {
+        commentTokens: { block: { open: "/*", close: "*/" }, line: "//" },
+        indentOnInput: /^\s*\}$/
+    }
+});
+/**
+Language support for Lezer grammars.
+*/
+function lezer() {
+    return new language.LanguageSupport(lezerLanguage);
+}
+
+exports.lezer = lezer;
+exports.lezerLanguage = lezerLanguage;

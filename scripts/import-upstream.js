@@ -62,7 +62,8 @@ for (const [name, { root }] of packages) {
 	const target = join(stagingRoot, packageRelativeDirectory(name))
 	mkdirSync(dirname(target), { recursive: true })
 	cpSync(root, target, {
-		filter: (source) => !relative(root, source).split(sep).some((part) => part === ".git" || part === "node_modules"),
+		// Nested upstream ignore files would hide the generated distributions that this repository intentionally tracks.
+		filter: (source) => !relative(root, source).split(sep).some((part) => part === ".git" || part === ".gitignore" || part === "node_modules"),
 		recursive: true,
 	})
 }
