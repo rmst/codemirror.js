@@ -1,0 +1,253 @@
+{
+	"name": "codemirror.js",
+	"version": "0.1.0",
+	"description": "Consolidated, dependency-free CodeMirror 6 distribution",
+	"type": "module",
+	"sideEffects": false,
+	"license": "MIT",
+	"exports": {
+		"./autocomplete": {
+			"types": "./packages/codemirror/autocomplete/dist/index.d.ts",
+			"import": "./packages/codemirror/autocomplete/dist/index.js"
+		},
+		"./collab": {
+			"types": "./packages/codemirror/collab/dist/index.d.ts",
+			"import": "./packages/codemirror/collab/dist/index.js"
+		},
+		"./commands": {
+			"types": "./packages/codemirror/commands/dist/index.d.ts",
+			"import": "./packages/codemirror/commands/dist/index.js"
+		},
+		"./lang-angular": {
+			"types": "./packages/codemirror/lang-angular/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-angular/dist/index.js"
+		},
+		"./lang-cpp": {
+			"types": "./packages/codemirror/lang-cpp/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-cpp/dist/index.js"
+		},
+		"./lang-css": {
+			"types": "./packages/codemirror/lang-css/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-css/dist/index.js"
+		},
+		"./lang-go": {
+			"types": "./packages/codemirror/lang-go/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-go/dist/index.js"
+		},
+		"./lang-html": {
+			"types": "./packages/codemirror/lang-html/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-html/dist/index.js"
+		},
+		"./lang-java": {
+			"types": "./packages/codemirror/lang-java/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-java/dist/index.js"
+		},
+		"./lang-javascript": {
+			"types": "./packages/codemirror/lang-javascript/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-javascript/dist/index.js"
+		},
+		"./lang-jinja": {
+			"types": "./packages/codemirror/lang-jinja/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-jinja/dist/index.js"
+		},
+		"./lang-json": {
+			"types": "./packages/codemirror/lang-json/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-json/dist/index.js"
+		},
+		"./lang-less": {
+			"types": "./packages/codemirror/lang-less/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-less/dist/index.js"
+		},
+		"./lang-lezer": {
+			"types": "./packages/codemirror/lang-lezer/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-lezer/dist/index.js"
+		},
+		"./lang-liquid": {
+			"types": "./packages/codemirror/lang-liquid/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-liquid/dist/index.js"
+		},
+		"./lang-markdown": {
+			"types": "./packages/codemirror/lang-markdown/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-markdown/dist/index.js"
+		},
+		"./lang-php": {
+			"types": "./packages/codemirror/lang-php/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-php/dist/index.js"
+		},
+		"./lang-python": {
+			"types": "./packages/codemirror/lang-python/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-python/dist/index.js"
+		},
+		"./lang-rust": {
+			"types": "./packages/codemirror/lang-rust/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-rust/dist/index.js"
+		},
+		"./lang-sass": {
+			"types": "./packages/codemirror/lang-sass/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-sass/dist/index.js"
+		},
+		"./lang-sql": {
+			"types": "./packages/codemirror/lang-sql/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-sql/dist/index.js"
+		},
+		"./lang-vue": {
+			"types": "./packages/codemirror/lang-vue/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-vue/dist/index.js"
+		},
+		"./lang-wast": {
+			"types": "./packages/codemirror/lang-wast/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-wast/dist/index.js"
+		},
+		"./lang-xml": {
+			"types": "./packages/codemirror/lang-xml/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-xml/dist/index.js"
+		},
+		"./lang-yaml": {
+			"types": "./packages/codemirror/lang-yaml/dist/index.d.ts",
+			"import": "./packages/codemirror/lang-yaml/dist/index.js"
+		},
+		"./language": {
+			"types": "./packages/codemirror/language/dist/index.d.ts",
+			"import": "./packages/codemirror/language/dist/index.js"
+		},
+		"./language-data": {
+			"types": "./packages/codemirror/language-data/dist/index.d.ts",
+			"import": "./packages/codemirror/language-data/dist/index.js"
+		},
+		"./lint": {
+			"types": "./packages/codemirror/lint/dist/index.d.ts",
+			"import": "./packages/codemirror/lint/dist/index.js"
+		},
+		"./lsp-client": "./packages/codemirror/lsp-client/dist/index.js",
+		"./merge": {
+			"types": "./packages/codemirror/merge/dist/index.d.ts",
+			"import": "./packages/codemirror/merge/dist/index.js"
+		},
+		"./search": {
+			"types": "./packages/codemirror/search/dist/index.d.ts",
+			"import": "./packages/codemirror/search/dist/index.js"
+		},
+		"./state": {
+			"types": "./packages/codemirror/state/dist/index.d.ts",
+			"import": "./packages/codemirror/state/dist/index.js"
+		},
+		"./theme-one-dark": {
+			"types": "./packages/codemirror/theme-one-dark/dist/index.d.ts",
+			"import": "./packages/codemirror/theme-one-dark/dist/index.js"
+		},
+		"./view": {
+			"types": "./packages/codemirror/view/dist/index.d.ts",
+			"import": "./packages/codemirror/view/dist/index.js"
+		},
+		"./lezer/common": {
+			"types": "./packages/lezer/common/dist/index.d.ts",
+			"import": "./packages/lezer/common/dist/index.js"
+		},
+		"./lezer/cpp": {
+			"types": "./packages/lezer/cpp/dist/index.d.ts",
+			"import": "./packages/lezer/cpp/dist/index.js"
+		},
+		"./lezer/css": {
+			"types": "./packages/lezer/css/dist/index.d.ts",
+			"import": "./packages/lezer/css/dist/index.js"
+		},
+		"./lezer/go": {
+			"types": "./packages/lezer/go/dist/index.d.ts",
+			"import": "./packages/lezer/go/dist/index.js"
+		},
+		"./lezer/highlight": {
+			"types": "./packages/lezer/highlight/dist/index.d.ts",
+			"import": "./packages/lezer/highlight/dist/index.js"
+		},
+		"./lezer/html": {
+			"types": "./packages/lezer/html/dist/index.d.ts",
+			"import": "./packages/lezer/html/dist/index.js"
+		},
+		"./lezer/java": {
+			"types": "./packages/lezer/java/dist/index.d.ts",
+			"import": "./packages/lezer/java/dist/index.js"
+		},
+		"./lezer/javascript": {
+			"types": "./packages/lezer/javascript/dist/index.d.ts",
+			"import": "./packages/lezer/javascript/dist/index.js"
+		},
+		"./lezer/json": {
+			"types": "./packages/lezer/json/dist/index.d.ts",
+			"import": "./packages/lezer/json/dist/index.js"
+		},
+		"./lezer/lezer": {
+			"types": "./packages/lezer/lezer/dist/index.d.ts",
+			"import": "./packages/lezer/lezer/dist/index.js"
+		},
+		"./lezer/lr": {
+			"types": "./packages/lezer/lr/dist/index.d.ts",
+			"import": "./packages/lezer/lr/dist/index.js"
+		},
+		"./lezer/markdown": {
+			"types": "./packages/lezer/markdown/dist/index.d.ts",
+			"import": "./packages/lezer/markdown/dist/index.js"
+		},
+		"./lezer/php": {
+			"types": "./packages/lezer/php/dist/index.d.ts",
+			"import": "./packages/lezer/php/dist/index.js"
+		},
+		"./lezer/python": {
+			"types": "./packages/lezer/python/dist/index.d.ts",
+			"import": "./packages/lezer/python/dist/index.js"
+		},
+		"./lezer/rust": {
+			"types": "./packages/lezer/rust/dist/index.d.ts",
+			"import": "./packages/lezer/rust/dist/index.js"
+		},
+		"./lezer/sass": {
+			"types": "./packages/lezer/sass/dist/index.d.ts",
+			"import": "./packages/lezer/sass/dist/index.js"
+		},
+		"./lezer/xml": {
+			"types": "./packages/lezer/xml/dist/index.d.ts",
+			"import": "./packages/lezer/xml/dist/index.js"
+		},
+		"./lezer/yaml": {
+			"types": "./packages/lezer/yaml/dist/index.d.ts",
+			"import": "./packages/lezer/yaml/dist/index.js"
+		},
+		"./marijn/find-cluster-break": "./packages/marijn/find-cluster-break/src/index.js",
+		".": {
+			"types": "./packages/codemirror/basic-setup/dist/index.d.ts",
+			"import": "./packages/codemirror/basic-setup/dist/index.js"
+		},
+		"./vendor/crelt": {
+			"types": "./packages/vendor/crelt/index.d.ts",
+			"import": "./packages/vendor/crelt/index.js"
+		},
+		"./vendor/marked": {
+			"types": "./packages/vendor/marked/lib/marked.d.ts",
+			"import": "./packages/vendor/marked/lib/marked.esm.js"
+		},
+		"./vendor/style-mod": {
+			"types": "./packages/vendor/style-mod/src/style-mod.d.ts",
+			"import": "./packages/vendor/style-mod/src/style-mod.js"
+		},
+		"./vendor/vscode-jsonrpc": {
+			"types": "./packages/vendor/vscode-jsonrpc/lib/common/api.d.ts",
+			"import": "./packages/vendor/vscode-jsonrpc/lib/common/api.js"
+		},
+		"./vendor/vscode-languageserver-protocol": {
+			"types": "./packages/vendor/vscode-languageserver-protocol/lib/common/api.d.ts",
+			"import": "./packages/vendor/vscode-languageserver-protocol/lib/common/api.js"
+		},
+		"./vendor/vscode-languageserver-types": "./packages/vendor/vscode-languageserver-types/lib/esm/main.js",
+		"./vendor/w3c-keyname": {
+			"types": "./packages/vendor/w3c-keyname/index.d.ts",
+			"import": "./packages/vendor/w3c-keyname/index.js"
+		},
+		"./legacy-modes/mode/*": {
+			"types": "./packages/codemirror/legacy-modes/mode/*.d.ts",
+			"import": "./packages/codemirror/legacy-modes/mode/*.js"
+		}
+	},
+	"scripts": {
+		"import-upstream": "node scripts/import-upstream.js",
+		"test": "node --test test/*.test.js"
+	}
+}
