@@ -12,6 +12,12 @@ import { EditorView } from "codemirror.js/view"
 import { javascript } from "codemirror.js/lang-javascript"
 ```
 
+Consumers that only need the runnable distribution can copy the exact closure listed in `runtime-files.json`:
+
+```sh
+node scripts/materialize.js . /path/to/output
+```
+
 `provenance-lock.json` records the exact upstream Git revisions and npm artifacts used to produce the snapshot.
 
 ## Updating

@@ -248,6 +248,7 @@
 	},
 	"scripts": {
 		"import-upstream": "node scripts/import-upstream.js",
+		"materialize": "node scripts/materialize.js",
 		"test": "node --test test/*.test.js"
 	}
 }

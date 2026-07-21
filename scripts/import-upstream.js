@@ -182,8 +182,13 @@ walk(join(stagingRoot, packageRelativeDirectory("@codemirror/legacy-modes"), "mo
 
 while (runtimeQueue.length > 0) rewriteRuntimeImports(runtimeQueue.shift())
 
+const distributionFiles = new Set(runtimeFiles)
 walk(join(stagingRoot, "packages"), (file) => {
-	if (/\.(?:d\.ts|d\.mts)$/.test(file) && /[\\/](?:dist|lib|mode)[\\/]/.test(file)) rewriteRuntimeImports(file, { follow: false })
+	if (/\.(?:d\.ts|d\.mts)$/.test(file) && /[\\/](?:dist|lib|mode)[\\/]/.test(file)) {
+		rewriteRuntimeImports(file, { follow: false })
+		distributionFiles.add(file)
+	}
+	if (/(?:^|[\\/])(?:package\.json|licen[cs]e(?:\.[a-z]+)?|thirdpartynotices\.txt)$/i.test(file)) distributionFiles.add(file)
 })
 
 const unresolved = []
@@ -261,6 +266,7 @@ const provenance = {
 	})),
 }
 writeFileSync(join(repositoryRoot, "provenance-lock.json"), `${JSON.stringify(provenance, null, "\t")}\n`)
+writeFileSync(join(repositoryRoot, "runtime-files.json"), `${JSON.stringify([...distributionFiles].map((file) => relative(stagingRoot, file).split(sep).join("/")).sort(), null, "\t")}\n`)
 
 const packagesTarget = join(repositoryRoot, "packages")
 rmSync(packagesTarget, { force: true, recursive: true })
