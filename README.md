@@ -31,6 +31,8 @@ npm test
 
 The importer replaces `packages/`, regenerates the root exports and provenance lock, and rejects unresolved internal runtime imports.
 
+Local corrections are tracked in [PATCHES.md](PATCHES.md) and should be preserved until equivalent fixes land upstream.
+
 ## License
 
 CodeMirror, Lezer, and the bundled runtime support packages retain their upstream licenses in their package directories. The consolidation tooling is MIT licensed under [LICENSE](LICENSE).

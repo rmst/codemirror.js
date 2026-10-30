@@ -65,6 +65,8 @@ export class Chunk {
 
 function fromLine(fromA: number, fromB: number, a: Text, b: Text) {
   let lineA = a.lineAt(fromA), lineB = b.lineAt(fromB)
+  // Empty lines are also line starts. Prefer that boundary, as toLine does, to preserve the offset between documents.
+  if (lineA.from == fromA && lineB.from == fromB) return [fromA, fromB]
   return lineA.to == fromA && lineB.to == fromB && fromA < a.length && fromB < b.length
     ? [fromA + 1, fromB + 1] : [lineA.from, lineB.from]
 }
